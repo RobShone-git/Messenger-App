@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voip.ServerController">
+   <children>
+      <ScrollPane layoutX="34.0" layoutY="67.0" prefHeight="307.0" prefWidth="239.0">
+         <content>
+            <VBox fx:id="vbxActivity" prefHeight="305.0" prefWidth="237.0" />
+         </content></ScrollPane>
+      <ScrollPane layoutX="309.0" layoutY="67.0" prefHeight="307.0" prefWidth="162.0">
+         <content>
+            <ListView fx:id="onlineUsersListView" prefHeight="305.0" prefWidth="160.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="112.0" layoutY="39.0" text="User Activity" />
+      <Label layoutX="349.0" layoutY="39.0" text="Online users" />
+   </children>
+</AnchorPane>

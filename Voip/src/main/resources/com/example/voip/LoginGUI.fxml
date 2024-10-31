@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="237.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voip.LoginController">
+    <children>
+        <Label layoutX="72.0" layoutY="119.0" prefHeight="42.0" prefWidth="72.0" text="Username:" />
+        <TextField fx:id="txtUsername" layoutX="165.0" layoutY="128.0" />
+        <Label layoutX="144.0" layoutY="45.0" prefHeight="42.0" prefWidth="212.0" text="Please enter your username">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+      <Button fx:id="btnSend" layoutX="372.0" layoutY="128.0" mnemonicParsing="false" onAction="#setUsername" text="Send" />
+      <Label fx:id="lblUsernameTaken" layoutX="165.0" layoutY="174.0" text="Username already taken :(" visible="false" />
+      <Label fx:id="lblInvalidUsername" layoutX="183.0" layoutY="198.0" text="Invalid username" textFill="RED" visible="false" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="418.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voip.DirectMessageController">
+   <children>
+      <ScrollPane layoutX="21.0" layoutY="14.0" prefHeight="329.0" prefWidth="304.0">
+         <content>
+            <VBox fx:id="privateVbox" prefHeight="327.0" prefWidth="302.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="280.0" layoutY="353.0" mnemonicParsing="false" onAction="#sendPM" text="Send" />
+      <TextField fx:id="txtMessage" layoutX="31.0" layoutY="353.0" prefHeight="24.0" prefWidth="242.0" />
+      <Button fx:id="btnVoiceNote" layoutX="261.0" layoutY="380.0" mnemonicParsing="false" onAction="#onVoiceNote" text="Voice Note" />
+      <Button fx:id="btnCall" layoutX="331.0" layoutY="22.0" mnemonicParsing="false" onAction="#clickCall" prefHeight="34.0" prefWidth="62.0" text="Call" />
+   </children>
+</AnchorPane>

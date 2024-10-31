@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voip.ChatController">
+    <children>
+        <ListView fx:id="onlineUsersListView" layoutX="405.0" layoutY="29.0" prefHeight="381.0" prefWidth="137.0" />
+        <TextField fx:id="typeMessage" layoutX="67.0" layoutY="419.0" prefHeight="27.0" prefWidth="291.0" />
+        <Label layoutX="453.0" layoutY="14.0" text="Online" />
+        <Button fx:id="btnSend" layoutX="405.0" layoutY="421.0" mnemonicParsing="false" onAction="#clickSend" prefWidth="59.0" text="Send" />
+        <ScrollPane fx:id="ScrollPaneGlobal" hbarPolicy="NEVER" layoutX="37.0" layoutY="29.0" prefHeight="381.0" prefWidth="350.0">
+            <content>
+                <VBox fx:id="VBoxGlobal" prefHeight="389.0" prefWidth="336.0">
+                    <children>
+                        <HBox prefHeight="389.0" prefWidth="323.0" />
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <Button fx:id="btnVoiceNote" layoutX="481.0" layoutY="421.0" mnemonicParsing="false" onAction="#onVoiceNote" text="Voice Note" />
+      <Button fx:id="btnCall" layoutX="552.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickCall" prefHeight="42.0" prefWidth="65.0" text="Join" />
+    </children>
+</AnchorPane>

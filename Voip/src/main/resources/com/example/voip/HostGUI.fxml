@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voip.HostController">
+   <children>
+      <Button layoutX="362.0" layoutY="138.0" mnemonicParsing="false" onAction="#sendHost" text="Join" />
+      <TextField fx:id="txtHost" layoutX="145.0" layoutY="136.0" />
+      <Label layoutX="73.0" layoutY="140.0" text="Host:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="78.0" layoutY="52.0" text="Please enter the host you want to join">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="lblInvalid" layoutX="121.0" layoutY="212.0" text="That is not a valid host name" textFill="RED" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="186.0" text="IP:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIP" layoutX="145.0" layoutY="185.0" />
+   </children>
+</AnchorPane>
