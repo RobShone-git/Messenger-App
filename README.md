@@ -38,5 +38,4 @@ The client provides a user-friendly interface to interact with other users. Clie
 
 - **Real-Time Audio with UDP**: Real-time voice calls are facilitated over the UDP protocol to reduce latency, providing an optimal user experience.
 - **Message Delivery with TCP**: Voice notes and other non-time-sensitive messages are sent over TCP to ensure reliable delivery.
-- **High Audio Quality**: Voice communication is configured to use 8000 samples per second, 16-bit sample size, and mono sound to ensure clear, high-quality audio.
 - **Error Handling and Recovery**: The system is resilient to unexpected disconnections, ensuring that users can safely reconnect without disrupting others.
